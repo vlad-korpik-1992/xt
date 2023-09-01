@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Road Rage(RUS BY LYAJKA)';
+    src: url('../fonts/RoadRage.woff2') format('woff2'),
+        url('../fonts/RoadRage.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+input {
+    outline:none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    color: #000;
+    scroll-behavior: smooth;
+}
+section{
+    position: relative;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.wrapper--section{
+    width: 87%;
+}
