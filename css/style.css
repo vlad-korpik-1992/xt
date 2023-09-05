@@ -578,18 +578,22 @@ p.video__items__title{
 }
 .breadcrumbs__list{
     display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     gap: 0 25px;
 }
 .breadcrumbs__list__items{
+    display: flex;
     color: #7A7A7A;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    flex: 1;
 }
 .breadcrumbs__link{
     color: #000;
     transition: 0.3s all;
+    white-space: nowrap;
 }
 .breadcrumbs__link:hover{
     color: #4806fe;
@@ -748,6 +752,91 @@ p.video__items__title{
 .school__form__error{
     color: #F00;
     line-height: normal;
+}
+.events__box{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    align-items: flex-start;
+}
+.events__box__items--mt{
+    margin-top: -45px;
+    display: flex;
+    justify-content: flex-end;
+}
+.posters{
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+.posters__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.posters__box__img{
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+.posters__box__link{
+    display: block;
+    padding: 24px 0 36px;
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.3s all;
+}
+.posters__box__link:hover{
+    color: #4806fe;
+}
+.posters__box__content--mt{
+    margin-top: 120px;
+}
+.posters__box__content--mt0{
+    margin-top: -80px;
+}
+.posters__box__content__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.posters__box__content__footer__link{
+    position: relative;
+    display: flex;
+    flex: 1;
+    max-width: fit-content;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 250%;
+    transition: 0.3s all;
+    border-bottom: 0.5px solid #000;
+}
+.posters__box__content__footer__link:hover{
+    color:#4806fe;
+    border-bottom: 0.5px solid #4806fe;
+}
+.posters__more{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+.posters__more__link{
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    height: 105px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    background-image: url(../img/posters--btn--bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media (max-width: 1199px) {
     section{
@@ -988,6 +1077,25 @@ p.video__items__title{
     .school__form__error{
         font-size: 14px;
     }
+    .events__box__items--mt{
+        margin-top: -30px;
+    }
+    .posters{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .posters__box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .posters__box__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .posters__box__content--mt0, .posters__box__content--mt{
+        margin-top: 0;
+    }
 }
 @media (max-width: 767px){
     .hero__box__content h1 {
@@ -1053,6 +1161,27 @@ p.video__items__title{
         flex: 0 0 50%;
         max-width: 50%;
         padding-left: 15px;
+    }
+    .events__box{
+        grid-template-columns: auto;
+    }
+    .events__box__items--mt{
+        justify-content: flex-start;
+    }
+    .posters__box__link{
+        font-size: 24px;
+        padding: 12px 0 18px;
+    }
+    .posters__box__content__footer__link{
+        font-size: 18px;
+    }
+    .posters__more{
+        margin-top: 60px;
+    }
+    .posters__more__link{
+        justify-content: center;
+        padding-left: 0;
+        font-size: 20px;
     }
 }
 @media (max-width: 575px){
@@ -1137,9 +1266,28 @@ p.video__items__title{
     .school__content {
         padding: 40px 0 80px;
     }
+    .posters__box{
+        grid-template-columns: auto;
+    }
+    .posters__box__link{
+        font-size: 20px;
+    }
+    .posters__more__link{
+        background-position: left;
+        background-size: contain;
+    }
 }
 @media (max-width: 374px){
     .logo img{
         width: 30px;
+    }
+    .page-title {
+        font-size: 38px;
+    }
+    .posters__more__link{
+        font-size: 16px;
+    }
+    .posters__box__content__footer__link {
+        font-size: 16px;
     }
 }
