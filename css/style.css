@@ -838,6 +838,78 @@ p.video__items__title{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.shop{
+    padding: 100px 0;
+}
+.shop__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 170px 40px;
+}
+.shop__box__items{
+    position: relative;
+    display: flex;
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+.shop__box__items--small{
+    display: flex;
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+.shop__box__absolute{
+    position: absolute;
+    top: -120px;
+    left: -50%;
+}
+.shop__box__link{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 30px;
+    background-color: #fff;
+    gap: 100px;
+    z-index: 1;
+}
+.shop__box__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.shop__box__info h2{
+    display: flex;
+    flex: 1;
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+}
+.shop__box__info span{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    color: #505D68;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.shop__box__img{
+    height: 345px;
+    object-fit: contain;
+}
+.catalog-img-absolute-top{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+}
+.header--zindex .catalog-img-absolute-top{
+    display: none;
+}
 @media (max-width: 1199px) {
     section{
         width: 95%;
@@ -1096,6 +1168,29 @@ p.video__items__title{
     .posters__box__content--mt0, .posters__box__content--mt{
         margin-top: 0;
     }
+    .shop {
+        padding: 80px 0;
+    }
+    .shop__box{
+        margin-left: -15px;
+        margin-right: -15px;
+        gap: 0;
+    }
+    .shop__box__items, .shop__box__items--small{
+        display: flex;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 40px;
+    }
+    .shop__box__link{
+        padding: 30px 15px;
+        gap: 0;
+    }
+    .catalog-img-absolute-top{
+        display: none;
+    }
 }
 @media (max-width: 767px){
     .hero__box__content h1 {
@@ -1182,6 +1277,12 @@ p.video__items__title{
         justify-content: center;
         padding-left: 0;
         font-size: 20px;
+    }
+    .shop__box__info h2{
+        font-size: 24px;
+    }
+    .shop__box__info span{
+        font-size: 18px;
     }
 }
 @media (max-width: 575px){
@@ -1275,6 +1376,14 @@ p.video__items__title{
     .posters__more__link{
         background-position: left;
         background-size: contain;
+    }
+    .shop__box__img{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .shop__box__items, .shop__box__items--small{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 @media (max-width: 374px){
