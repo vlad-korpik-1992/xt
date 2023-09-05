@@ -260,6 +260,7 @@ section{
     height: 100vh;
     overflow-y: scroll;
     border-left: 1px solid #DADDDE;
+    z-index: 2;
 }
 .header__right::-webkit-scrollbar{
     display: none;
@@ -394,6 +395,10 @@ p.video__items__title{
     font-size: 22px;
     font-weight: bold;
     line-height: normal;
+    transition: 0.3s all;
+}
+.video__items__link:hover p.video__items__title{
+    color: #4806fe;
 }
 .video__items__img{
     position: relative;
@@ -504,6 +509,10 @@ p.video__items__title{
     top: 30%;
     max-width: 166px;
 }
+.work{
+    position: relative;
+    z-index: 2;
+}
 .work__box{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -564,6 +573,182 @@ p.video__items__title{
 .footer p{
     padding-left: 50px;
 }
+.breadcrumbs{
+    padding: 55px 0 90px;
+}
+.breadcrumbs__list{
+    display: flex;
+    width: fit-content;
+    gap: 0 25px;
+}
+.breadcrumbs__list__items{
+    color: #7A7A7A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+.breadcrumbs__link{
+    color: #000;
+    transition: 0.3s all;
+}
+.breadcrumbs__link:hover{
+    color: #4806fe;
+}
+.page-title{
+    display: block;
+    color: #000;
+    font-family: 'Road Rage(RUS BY LYAJKA)';
+    font-size: 96px;
+    line-height: 100%;
+}
+.school{
+    padding-bottom: 100px;
+}
+.school__box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.school__box__items--last{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.school__box__items--last::before{
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: -180px;
+    width: calc(100% + 30px);
+    height: calc(100% + 350px);
+    background-image: url(../img/school__right.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.school__box__list{
+    display: flex;
+    padding-bottom: 90px;
+    gap: 20px 70px;
+}
+.school__box__list__link{
+    position: relative;
+    display: flex;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+.school__box__list__link::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 25px;
+    width: 100%;
+    max-width: 128px;
+    height: 8px;
+    background-image: url(../img/school__bottom.png);
+}
+.section--school{
+    display: block;
+    color: #000;
+    font-family: 'Road Rage(RUS BY LYAJKA)';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 125%;
+    width: 100%;
+    max-width: 350px;
+    padding-bottom: 75px;
+    margin-top: -205px;
+    z-index: 1;
+}
+.school__box__video{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    gap: 20px;
+}
+.school__content{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 70px 0 110px;
+    color: #16161D;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 180%;
+}
+.school__content ul{
+    padding-left: 25px;
+}
+.school__content ul li{
+    list-style: disc;
+}
+.school__content a{
+    color: #000;
+    transition: 0.3s all;
+}
+.school__content a:hover{
+    color: #4806fe;
+}
+.school__form{
+    display: flex;
+    gap: 10px;
+}
+.school__form__box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.school__form__file{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+.school__form__btn{
+    width: 100%;
+    max-width: 305px;
+    height: 64px;
+    background: transparent;
+    color: #000;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: normal;
+}
+.school__form__submit{
+    width: 100%;
+    max-width: 155px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 24px;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.school__form__submit:hover{
+    background-color: #4806fe;
+}
+.school__form__error{
+    color: #F00;
+    line-height: normal;
+}
 @media (max-width: 1199px) {
     section{
         width: 95%;
@@ -591,6 +776,18 @@ p.video__items__title{
     }
     .section__title{
         font-size: 50px;
+    }
+    .breadcrumbs {
+        padding: 105px 0 50px;
+    }    
+    .page-title{
+        font-size: 79px;
+    }
+    .section--school{
+        font-size: 40px;
+    }
+    .school__content{
+        font-size: 20px;
     }
 }
 @media (max-width: 991px) {
@@ -769,6 +966,28 @@ p.video__items__title{
     .work__box__items:last-child{
         grid-column: 1 / -1;
     }
+    .school__box__items--last::before{
+        right: -15px;
+        width: calc(100% + 60px);
+    }
+    .page-title{
+        font-size: 65px;
+    }
+    .section--school{
+        font-size: 33px;
+    }
+    .school__form{
+        flex-direction: column;
+    }
+    .school__content{
+        padding: 60px 0 100px;
+    }
+    .school__content, .school__form__btn, .school__form__submit{
+        font-size: 18px;
+    }
+    .school__form__error{
+        font-size: 14px;
+    }
 }
 @media (max-width: 767px){
     .hero__box__content h1 {
@@ -801,6 +1020,38 @@ p.video__items__title{
         gap: 15px;
     }
     .footer p {
+        padding-left: 15px;
+    }
+    .page-title {
+        font-size: 54px;
+    }
+    .school__box{
+        grid-template-columns: auto;
+    }
+    .school__box__items--last::before{
+        top: 0;
+    }
+    .section--school{
+        margin-top: 0;
+        padding-top: 40px;
+        max-width: 767px;
+    }
+    .school__box__items--last{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .school__box__video{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px 0;
+        margin-left: -15px;
+        padding-top: 0;
+        width: calc(100% + 15px);
+        max-width: calc(100% + 15px);
+    }
+    .video__items--school{
+        flex: 0 0 50%;
+        max-width: 50%;
         padding-left: 15px;
     }
 }
@@ -869,6 +1120,22 @@ p.video__items__title{
     .footer__menu__list{
         justify-content: space-between;
         padding-top: 30px;  
+    }
+    .video__items--school{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .page-title {
+        font-size: 45px;
+    }
+    .breadcrumbs {
+        padding: 95px 0 50px;
+    }
+    .school__box__list{
+        padding-bottom: 80px;
+    }
+    .school__content {
+        padding: 40px 0 80px;
     }
 }
 @media (max-width: 374px){
