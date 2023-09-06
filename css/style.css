@@ -949,7 +949,12 @@ p.video__items__title{
     top: -50px;
     left: 50%;
 }
-.header--zindex .catalog-img-absolute-top{
+.breadcrumbs-img-absolute-top {
+    position: absolute;
+    top: -135px;
+    left: 35%;
+}
+.header--zindex .catalog-img-absolute-top, .header--zindex .breadcrumbs-img-absolute-top{
     display: none;
 }
 .alike{
@@ -1430,7 +1435,7 @@ p.video__items__title{
         padding: 30px 15px;
         gap: 0;
     }
-    .catalog-img-absolute-top{
+    .catalog-img-absolute-top, .breadcrumbs-img-absolute-top{
         display: none;
     }
     .header__top--cart {
