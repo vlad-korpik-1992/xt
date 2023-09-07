@@ -630,6 +630,7 @@ p.video__items__title{
     font-weight: 400;
     line-height: normal;
     flex: 1;
+    white-space: nowrap;
 }
 .breadcrumbs__link{
     color: #000;
