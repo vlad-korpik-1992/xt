@@ -66,4 +66,13 @@ $(document).ready(function() {
       }
     ]
 	});
+  $('.jobs__box__items__link').click(function (e) {
+    e.preventDefault();
+    let elem = e.target;
+    let id = '1' + elem.getAttribute('id');
+    let idContent = '2' + elem.getAttribute('id');
+    console.log(elem);
+    jQuery("#"+id).toggleClass('content--dn');
+    jQuery("#"+idContent).toggleClass('content--active');
+    });
 })
