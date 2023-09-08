@@ -1362,9 +1362,74 @@ p.video__items__title{
     font-weight: 450;
     line-height: normal;
 }
+.worker{
+    padding-bottom: 100px;
+}
+.worker__box{
+    display: grid;
+    grid-template-columns: 45% auto;
+    gap: 100px;
+    align-items: center;
+}
+.worker__box__pictires{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.worker__box__social{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 64px;
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+    z-index: 3;
+}
+.worker__img--absolute{
+    position: absolute;
+    right: -195px;
+    width: calc(230px - 5%);
+}
+.worker__img{
+    position: relative;
+    z-index: 2;
+}
+.worker__box__info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.worker__box__info h1{
+    display: flex;
+    font-family: 'Road Rage(RUS BY LYAJKA)';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 30px;
+}
+.worker__box__info p{
+    display: flex;
+    font-weight: 400;
+    line-height: 167%;
+    padding-bottom: 20px;
+}
+.worker__box__info p:last-child{
+    padding-bottom: 0;
+}
 @media (min-width: 1500px) {
     .cart__slider__img{
         height: 730px;
+    }
+    .worker__box{
+        gap: 230px;
     }
 }
 @media (max-width: 1199px) {
@@ -1440,6 +1505,16 @@ p.video__items__title{
     }
     .statistics__items__inner span{
         font-size: 20px;
+    }
+    .worker__box{
+        grid-template-columns: 50% auto;
+        gap: 40px;
+    }
+    .worker__img--absolute{
+        right: -130px;
+    }
+    .worker__box__info h1{
+        font-size: 53px;
     }
 }
 @media (max-width: 991px) {
@@ -1747,6 +1822,16 @@ p.video__items__title{
     }
     .feedback__form__row{
         max-width: 100%;
+    }
+    .worker__box__info h1{
+        font-size: 44px;
+    }
+    .worker__box{
+        grid-template-columns: auto;
+    }
+    .worker__img--absolute {
+        right: inherit;
+        left: -15px;
     }
 }
 @media (max-width: 767px){
@@ -2063,6 +2148,15 @@ p.video__items__title{
     }
     .feedback__form__textarea{
         font-size: 16px;
+    }
+    .worker{
+        padding-bottom: 80px;
+    }
+    .worker__box__social{
+        height: 50px;
+    }
+    .worker__box__info h1 {
+        font-size: 30px;
     }
 }
 @media (max-width: 374px){
