@@ -1212,6 +1212,156 @@ p.video__items__title{
 .jobs__box__items__link:hover .jobs__box__items__link__head h2{
     color: #4806fe;
 }
+.about{
+    padding-bottom: 100px;
+}
+.about__subtitle{
+    display: block;
+    width: 60%;
+    max-width: 965px;
+    padding: 85px 0 0;
+    font-size: 20px;
+    line-height: 160%;
+}
+.statistic{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.statistic__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.statistic__img{
+    flex: 0 0 62%;
+    max-width: 62%;
+}
+.statistic__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    flex: 0 0 31%;
+    max-width: 31%;
+}
+.statistics__items__inner p{
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 100%;
+}
+.statistics__items__inner span{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100%;
+    padding-top: 15px;
+}
+.direction{
+    padding-bottom: 35px;
+}
+.direction__box{
+    display: block;
+    padding-bottom: 100px;
+}
+.direction__box h2{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 70px;
+}
+.direction__box p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+}
+.feedback{
+    background-image: url(../img/top__bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0 120px;
+}
+.section__title--feedback{
+    padding-bottom: 50px;
+}
+.feedback__content{
+    display: block;
+    padding-bottom: 50px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+}
+.feedback__form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.feedback__form__row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    gap: 30px;
+}
+.feedback__form__input{
+    display: flex;
+    flex: 0 0 50%;
+    max-width: calc(50% - 30px);
+    padding: 16px 24px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: 'Futura PT';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.feedback__form__input::-moz-placeholder{
+    color: #fff;
+}
+.feedback__form__input::-webkit-input-placeholder{
+    color: #fff;
+}
+.feedback__form__textarea{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 24px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: 'Futura PT';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.feedback__form__textarea::-webkit-input-placeholder{
+    color: #fff;
+}
+.feedback__form__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 252px;
+    height: 62px;
+    background-color: transparent;
+    background-image: url(../img/form__btn__bg.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.3s all;
+    color: #231F20;
+    font-family: 'Futura PT';
+    font-size: 18px;
+    font-weight: 450;
+    line-height: normal;
+}
 @media (min-width: 1500px) {
     .cart__slider__img{
         height: 730px;
@@ -1284,6 +1434,12 @@ p.video__items__title{
     }
     .donations__img{
         bottom: -50px;
+    }
+    .statistics__items__inner p{
+        font-size: 65px;
+    }
+    .statistics__items__inner span{
+        font-size: 20px;
     }
 }
 @media (max-width: 991px) {
@@ -1573,6 +1729,25 @@ p.video__items__title{
     .cart__box {
         padding-bottom: 145px;
     }
+    .about__subtitle{
+        padding: 70px 0 0;
+    }
+    .statistics__items__inner p {
+        font-size: 36px;
+    }
+    .statistic__row{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .direction{
+        padding-bottom: 0;
+    }
+    .feedback__content{
+        font-size: 24px;
+    }
+    .feedback__form__row{
+        max-width: 100%;
+    }
 }
 @media (max-width: 767px){
     .hero__box__content h1 {
@@ -1679,6 +1854,32 @@ p.video__items__title{
     .featues__box__items{
         max-width: 100%;
     }
+    .about__subtitle{
+        width: 100%;
+        padding: 60px 0 0;
+    }
+    .statistic__img{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 40px;
+    }
+    .statistic__box{
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .statistics__items__inner{
+        flex: 1;
+    }
+    .statistics__items__inner p {
+        font-size: 65px;
+    }
+    .statistics__items__inner span {
+        font-size: 28px;
+    }
 }
 @media (max-width: 575px){
     .hero{
@@ -1752,6 +1953,9 @@ p.video__items__title{
         justify-content: space-between;
         padding-top: 30px;  
     }
+    .footer p, .footer__link{
+        font-size: 16px;
+    }
     .video__items--school{
         flex: 0 0 100%;
         max-width: 100%;
@@ -1819,6 +2023,47 @@ p.video__items__title{
     .jobs__box__items__link__head h2{
         font-size: 24px;
     }
+    .about {
+        padding-bottom: 80px;
+    }
+    .about__subtitle{
+        padding: 50px 0 0;
+    }
+    .statistic{
+        padding-bottom: 80px;
+    }
+    .statistics__items__inner p {
+        font-size: 38px;
+    }
+    .statistics__items__inner span {
+        font-size: 18px;
+    }
+    .derection__box{
+        padding-bottom: 60px;
+    }
+    .direction__box h2{
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    .direction__box p{
+        font-size: 18px;
+    }
+    .feedback{
+        padding: 80px 0 100px;
+    }
+    .feedback__content{
+        font-size: 20px;
+    }
+    .feedback__form__input{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .feedback__form__input{
+        font-size: 16px;
+    }
+    .feedback__form__textarea{
+        font-size: 16px;
+    }
 }
 @media (max-width: 374px){
     .logo img{
@@ -1835,5 +2080,11 @@ p.video__items__title{
     }
     .card__box__size {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .statistics__items__inner p {
+        font-size: 30px;
+    }
+    .statistics__items__inner span {
+        font-size: 16px;
     }
 }
