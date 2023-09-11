@@ -1488,6 +1488,80 @@ p.video__items__title{
     top: -200px;
     right: -250px;
 }
+.posters__box--video{
+    gap: 225px 40px;
+}
+.video__link{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+}
+.video__link__inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video__link__inner--mt{
+    margin-top: -60px;
+}
+.video__link__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.video__link__play{
+    position: absolute;
+}
+.video__link__logo{
+    display: flex;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.video__link__img{
+    width: 100%;
+    object-fit: cover;
+}
+.video__link__title{
+    display: flex;
+    font-size: 24px;
+    color: #000;
+    padding-left: 10px;
+    transition: 0.3s all;
+}
+.video__link:hover span.video__link__title{
+    color: #4806fe;
+}
+.ticker{
+    position: relative;
+    height: 173px;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/video__liner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+}
+.ticker__title{
+    max-width: 2480px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #FFF;
+    white-space: nowrap;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: -15%;
+}
+.posters--video{
+    padding-bottom: 170px;
+}
 @media (min-width: 1500px) {
     .cart__slider__img{
         height: 730px;
@@ -1579,6 +1653,12 @@ p.video__items__title{
     }
     .worker__box__info h1{
         font-size: 53px;
+    }
+    .video__link__title{
+        font-size: 20px;
+    }
+    .posters--video{
+        padding-bottom: 140px;
     }
 }
 @media (max-width: 991px) {
@@ -1789,6 +1869,9 @@ p.video__items__title{
     .posters__box{
         grid-template-columns: repeat(2, 1fr);
     }
+    .posters__box--video{
+        gap: 40px;
+    }
     .posters__box__content{
         display: flex;
         flex-direction: column;
@@ -1920,6 +2003,18 @@ p.video__items__title{
     .team__box__link{
         padding: 40px 50px 53px;
         font-size: 23px;
+    }
+    .video__link__inner--mt{
+        margin-top: 0;
+    }
+    .ticker{
+        margin-bottom: 40px;
+    }
+    .ticker__title{
+        font-size: 33px;
+    }
+    .posters--video{
+        padding-bottom: 115px;
     }
 }
 @media (max-width: 767px){
@@ -2056,6 +2151,21 @@ p.video__items__title{
     .team__box__link {
         padding: 30px 15px 40px;
         font-size: 20px;
+    }
+    .video__link__logo{
+        width: 36px;
+        height: 36px;
+    }
+    .ticker{
+        margin-top: 40px;
+        margin-bottom: 0;   
+        height: 100px;    
+    }
+    .ticker__title{
+        font-size: 27px;
+    }
+    .posters--video{
+        padding-bottom: 95px;
     }
 }
 @media (max-width: 575px){
@@ -2266,6 +2376,15 @@ p.video__items__title{
     .team__box__link{
         font-size: 28px;
     }
+    .video__link__footer{
+        justify-content: flex-start;
+    }
+    .ticker__title{
+        font-size: 22px;
+    }
+    .posters--video{
+        padding-bottom: 75px;
+    }
 }
 @media (max-width: 374px){
     .logo img{
@@ -2291,5 +2410,11 @@ p.video__items__title{
     }
     .team__box__link {
         font-size: 20px;
+    }
+    .ticker__title{
+        font-size: 20px;
+    }
+    .posters--video{
+        padding-bottom: 60px;
     }
 }
