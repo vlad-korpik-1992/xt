@@ -1489,7 +1489,7 @@ p.video__items__title{
     right: -250px;
 }
 .posters__box--video{
-    gap: 225px 40px;
+    gap: 160px 40px;
 }
 .video__link{
     display: grid;
@@ -1544,7 +1544,7 @@ p.video__items__title{
     background-image: url(../img/video__liner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 .ticker__title{
     max-width: 2480px;
