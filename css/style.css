@@ -1682,6 +1682,24 @@ p.video__items__title{
 .hero__box__content__link--mt{
     margin-top: 40px;
 }
+.single{
+    display: flex;
+    padding-top: 85px;
+    flex-direction: column;
+    gap: 20px;
+}
+.single h2, .single h3, .single h4, .single h5, .single h6{
+    font-size: 28px;
+    font-weight: 600;
+}
+.single ul li{
+    list-style: disc;
+    margin-left: 20px;
+}
+.single a{
+    color: #4806fe;
+    text-decoration: underline;
+}
 @media (min-width: 1199px) {
     .menu-modal--open{
         visibility: visible;
@@ -2182,6 +2200,9 @@ p.video__items__title{
     .recital__box__inner h1 {
         font-size: 41px;
     }
+    .single{
+        padding-top: 70px;
+    }
 }
 @media (max-width: 767px){
     .hero__box__content h1 {
@@ -2338,6 +2359,9 @@ p.video__items__title{
     }
     .recital__box__inner h1 {
         font-size: 34px;
+    }
+    .single{
+        padding-top: 60px;
     }
 }
 @media (max-width: 575px){
@@ -2559,6 +2583,12 @@ p.video__items__title{
     }
     .recital__box__inner h1 {
         font-size: 28px;
+    }
+    .single{
+        padding-top: 50px;
+    }
+    .single h2, .single h3, .single h4, .single h5, .single h6{
+        font-size: 24px;
     }
 }
 @media (max-width: 374px){
