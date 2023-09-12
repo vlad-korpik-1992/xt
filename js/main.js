@@ -21,6 +21,32 @@ function openMenu(event) {
     btnElement.classList.toggle('menu__btn__element--close');
 }
 
+/* Hover Menu */ 
+const pageWidth = document.documentElement.scrollWidth
+$(document).ready(function(){
+  if (pageWidth > 1200) {
+    $(".menu-open-one").hover(function(){
+      $(".menu-modal--one").addClass("menu-modal--open");
+    });
+    $(".menu-modal__link").hover(function(){}, function(){
+        $(".menu-modal--one").removeClass("menu-modal--open");
+    });
+    $(".menu-open-shop").hover(function(){
+      $(".menu-modal--shop").addClass("menu-modal--open");
+    });
+    $(".menu-modal__link").hover(function(){}, function(){
+        $(".menu-modal--shop").removeClass("menu-modal--open");
+    });
+    $(".menu-open-donat").hover(function(){
+      $(".menu-modal--donat").addClass("menu-modal--open");
+    });
+    $(".menu-modal__link").hover(function(){}, function(){
+        $(".menu-modal--donat").removeClass("menu-modal--open");
+    });
+  }
+});
+/* Hover Menu */ 
+
 $(document).ready(function() {
   $('.top__slider').slick({
 		mobileFirst: true,

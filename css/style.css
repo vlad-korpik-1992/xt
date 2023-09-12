@@ -1633,12 +1633,67 @@ p.video__items__title{
     line-height: 160%;
     padding-bottom: 40px;
 }
+.menu-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 5000px;
+    margin: 0 auto;
+    height: 100vh;
+    z-index: 20;
+    background-image: url(../img/site__bg.jpg);
+    background-attachment: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.menu-modal__link{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    color: #000;
+    font-family: 'Road Rage(RUS BY LYAJKA)';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu-modal--one{
+    padding-top: 95px;
+}
+.menu-modal__img{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+.menu-modal__img--shop{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.menu-modal--shop{
+    padding-top: 250px;
+}
+.menu-modal--donat{
+    padding-top: 405px;
+}
+@media (min-width: 1199px) {
+    .menu-modal--open{
+        visibility: visible;
+        opacity: 1;
+    }
+}
 @media (min-width: 1500px) {
     .cart__slider__img{
         height: 730px;
     }
     .worker__box{
         gap: 230px;
+    }
+    .menu-modal__link{
+        font-size: 96px;
     }
 }
 @media (max-width: 1199px) {
