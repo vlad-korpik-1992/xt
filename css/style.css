@@ -1679,6 +1679,9 @@ p.video__items__title{
 .menu-modal--donat{
     padding-top: 405px;
 }
+.hero__box__content__link--mt{
+    margin-top: 40px;
+}
 @media (min-width: 1199px) {
     .menu-modal--open{
         visibility: visible;
