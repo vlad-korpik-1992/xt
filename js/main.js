@@ -11,40 +11,6 @@ function fixHeader() {
   }
 }
 
-const pageWidth = document.documentElement.scrollWidth
-
-if (pageWidth > 992) {
-
-  const contentEvants = document.querySelector('#recital__box__inner')
-  let contentEvantsH = document.getElementById('recital__box__inner').clientHeight
-  let recitalImg = document.getElementById('recitalImg').clientHeight
-  
-  if(contentEvantsH < recitalImg){
-    contentEvants.style.height = document.getElementById('recitalImg').clientHeight - 168 + 'px'
-  }
-  else{
-    contentEvants.style.height = document.getElementById('recital__box__inner').clientHeight + 'px'
-  }
-  window.addEventListener('resize', (e) => {
-    let contentEvantsH = document.getElementById('recital__box__inner').clientHeight
-    let recitalImg = document.getElementById('recitalImg').clientHeight
-    if(contentEvantsH < recitalImg){
-      contentEvants.style.height = document.getElementById('recitalImg').clientHeight - 168 + 'px'
-    }
-    else{
-      contentEvants.style.height = document.getElementById('recital__box__inner').clientHeight + 'px'
-    }
-  });
-
-}
-
-
-if (pageWidth < 992) {
-  document.querySelector("#logo").src = "./img/logo.svg";
-}
-
-
-
 function openMenu(event) {
     event.preventDefault()
     const btnMenu = document.querySelector('.menu__btn');
